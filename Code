@@ -1,0 +1,19 @@
+#Importing Packages
+import numpy as np
+import pandas as pd
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import Model
+from keras.layers import Input, Flatten, Dense
+from keras.callbacks import Callback, ModelCheckpoint
+from keras.applications.vgg16 import VGG16
+from keras.preprocessing import image
+from keras.applications.vgg16 import preprocess_input
+
+#Importing the pretrained network
+model_vgg16_conv = VGG16(weights='imagenet', include_top=False)
+
+#Freeze the layers
+for layer in model_vgg16_conv.layers[0]:
+    layer.trainable = False
+    
+    

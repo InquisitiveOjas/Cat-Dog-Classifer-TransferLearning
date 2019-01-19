@@ -6,4 +6,15 @@ It is currently very popular in the field of Deep Learning because it enables yo
 Fine-tuning:- 
 Fine Tuning is the process in which the parameters of a trained model must be adjusted very precisely while we are trying to validate that model taking into account a small data set that does not belong to the train set.
 
-Tranfer Learning is broader than fine tuning.we know a priori that the train and test come from different distribution and we are trying to tackle this problem with several techniques depending on the kind of difference, instead of just trying to adjust some parameters (usually we are doing this for reasons as preventing overfitting etc.)
+Tranfer Learning is broader than fine tuning.
+We know apriori that the train and test come from different distribution and we are trying to tackle this problem with several techniques depending on the kind of difference, instead of just trying to adjust some parameters (usually we are doing this for reasons as preventing overfitting etc.)
+
+Approach:-
+(1) Importing the packages
+(2) Load the pre-trained network
+(3) Freeze the layers
+(4) Training the parameters
+(5) Build a classification model on the top of the base network
+(6) Dataset Preperation
+(7) Training
+(8) Test the model
